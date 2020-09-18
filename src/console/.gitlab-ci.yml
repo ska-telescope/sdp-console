@@ -1,0 +1,21 @@
+# GitLab CI jobs for console
+
+# ============================================================================
+# Build Docker development image
+# ============================================================================
+
+build:console:
+  extends: .build_docker
+  variables:
+    BUILD_PATH: src/console
+
+# ============================================================================
+# Tag and publish Docker image (master only)
+# ============================================================================
+
+publish:console:
+  extends: .publish_docker
+  dependencies:
+    - build:console
+  variables:
+    BUILD_PATH: src/console
