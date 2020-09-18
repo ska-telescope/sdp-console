@@ -21,8 +21,8 @@ RUN curl -L https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar x
 
 # Install Python packages
 
-COPY requirements.txt *.whl ./
-RUN pip install -r requirements.txt -f .
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
 
 WORKDIR /app
 CMD ["/bin/bash", "-c", "trap : INT TERM; sleep infinity & wait"]
