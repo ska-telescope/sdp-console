@@ -1,7 +1,7 @@
-FROM python:3.7
+FROM python:3.9
 
-ARG KUBE_VERSION=1.18.2
-ARG HELM_VERSION=3.2.0
+ARG KUBE_VERSION=1.21.0
+ARG HELM_VERSION=3.5.4
 
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
