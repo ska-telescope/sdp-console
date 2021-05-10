@@ -9,10 +9,10 @@ When new release is ready:
 
   - check out master
   - update CHANGELOG.md
-  - update bumpver.toml [bumpver]: tag = True
+  - update bumpver.toml [bumpver]: tag = true
   - commit changes
   - make release-[patch||minor||major]
-  - update bumpver.toml [bumpver]: tag = False
+  - update bumpver.toml [bumpver]: tag = false
   - commit changes
   - make patch-beta
 
