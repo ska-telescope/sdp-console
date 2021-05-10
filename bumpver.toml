@@ -13,5 +13,3 @@ push = true
 "version.txt" = [
     "{version}"
 ]
-
-
