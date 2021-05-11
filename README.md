@@ -9,13 +9,7 @@ When new release is ready:
 
   - check out master
   - update CHANGELOG.md
-  - update bumpver.toml [bumpver]: tag = true
   - commit changes
   - make release-[patch||minor||major]
-  - update bumpver.toml [bumpver]: tag = false
-  - commit changes
-  - make patch-beta
 
 Note: bumpver needs to be installed
-
-The CI pipeline will trigger on every push, but will only publish artifacts when "tag = True" in bumpver.toml.
