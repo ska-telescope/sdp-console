@@ -3,3 +3,4 @@
 ipython
 kubernetes
 ska-sdp-config >= 0.0.8
+bumpver
