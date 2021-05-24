@@ -2,5 +2,4 @@
 --extra-index-url https://pypi.org/simple
 ipython
 kubernetes
-ska-sdp-config >= 0.0.8
-bumpver
+ska-sdp-config >= 0.3.0
